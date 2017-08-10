@@ -149,7 +149,41 @@ textarea, input[type=text], input[type=date] {
     opacity: 0.4;
 }
 
+/*双击*/
 .container .up-task .dbContent{
     height: 30px;
     display: none;
+}
+
+/*删除线*/
+.task-list .deleteline{
+    opacity: 0.5;
+    position: relative;
+}
+.task-list .deleteline:after{
+    content: "";
+    display: block;
+    width:88%;
+    margin: auto;
+    height:1px;
+    background: #000;
+    position: absolute;
+    top:50%;
+    left: 4%;
+}
+
+/*闹钟提醒框*/
+.msg{
+    display: none;
+    text-align: center;
+    background: #ffe264;
+    padding: 10px;
+    color: #333;
+}
+.msg .msg-content{
+    display: inline-block;
+}
+.msg .msg-btn{
+    cursor: pointer;
+    display: inline-block;
 }
